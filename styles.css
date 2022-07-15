@@ -1,0 +1,16 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /*COLORS:*/
+    --backgroundCLR: #1F2973;
+    --mainTXT: #F9FAF8;
+    --secondaryTXT: #E5E7EB;
+    --btnCLR: #3882F6;
+    --infoTXT: #1F2937;
+}
