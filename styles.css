@@ -27,6 +27,7 @@
     height: 100vh;
     width: max(100%);
     overflow: hidden;
+    flex-direction: column !important;
 }
 
 .one{
@@ -43,7 +44,7 @@ header{
     align-items: center;
     font-size: 24px;
     color: var(--mainTXT);
-    padding: 2rem;
+    padding-top: 2rem;
     word-spacing: 2rem;
 }
 
@@ -71,6 +72,79 @@ header li a{
     height: inherit;
     width: inherit;
     justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 40px;
+    
+}
+
+.hero h2{
+    font-size: 48px;
+    font-weight: bolder;
+    color: var(--mainTXT)
+}
+
+.hero p{
+    font-size: 18px;
+    color: var(--secondaryTXT);
+}
+
+.hero button{
+    color: white;
+    font-size: 1.2rem;
+    background-color: var(--btnCLR);
+    height: 5rem;
+    width: 10rem;
+    text-decoration: none;
+    border-style: none;
+    border-radius: 10%;
+}
+
+.hero button:active,
+.hero button:hover{
+    cursor: pointer;
+    opacity: 90%;
+    box-shadow: 1px 1px 1px darkblue;
+}
+
+.hero img{
+    color: white;
+}
+
+.two{
+    padding-left: 15rem;
+    padding-right: 15rem;
     align-items: center;
-    flex-direction: row;
+}
+
+.imgShowcase{
+    display: flex;
+    height: 100vh;
+    width: max(100%);
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    color: purple;
+}
+
+.three{
+    background-color: var(--secondaryTXT);
+}
+
+.four{
+    padding-left: 15rem;
+    padding-right: 15rem;
+    align-items: center;
+}
+
+.landingImage{
+    height: 20px;
+    width: 20px;
+}
+
+.showcase{
+    height: 200px;
+    width: 200px;
+    border: solid 2px var(--btnCLR);
+    border-radius: 10%;
 }
