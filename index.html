@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="photos/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -15,47 +16,57 @@
         <div class="item one">
             <header>
                 <div class="logo">
-                    <h2>Wonderwall</h2>
+                    <h2>TrueChatolic</h2>
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="">HOME</a></li>
-                        <li><a href="">WORK</a></li>
-                        <li><a href="">CONTACT</a></li>
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                        <li><a href="#join">JOIN</a></li>
                     </ul>
                 </nav>
             </header>
             <div class="hero">
-                <h2>This website is awesome</h2>
-                <p>This website has some subtext that goes under the main title. It's a smaller font and the color is lower in contrast</p>
-                <button>Sign up</button>
-                <img class="landingImage" src="photos/demoPhoto.jpg" alt="basic image">
+                <div id="home" class="heroCont">
+                    <h2>This website is<br>awesome</h2>
+                    <p>This website has some subtext that goes under the main title. It's a smaller font and the color is lower in contrast</p>
+                    <button>Sign up</button>
+                </div>
+                <div class="heroImg">
+                    <img class="landingImage" src="photos/demoPhoto.jpg" alt="basic image">
+                </div>
             </div>
         </div>
-        <div class="item two">
+        <div id="about" class="item two">
             <h2>Some random information.</h2>
             <div class="imgShowcase">
-                <img class="showcase" src="photos/demoPhoto.jpg" alt="i1">
-                <p>this is some subtext under an ilustration or image</p>
-                <img class="showcase" src="photos/demoPhoto.jpg" alt="i2">
-                <p>this is some subtext under an ilustration or image</p>
-                <img class="showcase" src="photos/demoPhoto.jpg" alt="i3">
-                <p>this is some subtext under an ilustration or image</p>
-                <img class="showcase" src="photos/demoPhoto.jpg" alt="i4">
-                <p>this is some subtext under an ilustration or image</p>
+                    <img class="showcase" src="photos/demoPhoto.jpg" alt="i1">
+                    <img class="showcase" src="photos/demoPhoto.jpg" alt="i2">
+                    <img class="showcase" src="photos/demoPhoto.jpg" alt="i3">        
+                    <img class="showcase" src="photos/demoPhoto.jpg" alt="i4"> 
             </div>
         </div>
-        <div class="item three">
-
+        <div id="contact" class="item three">
+            <em>“It takes three to make love, not two: you, your spouse, and God. Without God people only succeed in bringing out the worst in one another. Lovers who have nothing else to do but love each other soon find there is nothing else. Without a central loyalty life is unfinished.”</em>
+            <strong>-Venerable Fulton J. Sheen</strong>
         </div>
-        <div class="item four">
+        <div id="join" class="item four">
             <div class="action">
-
+                <div class="card">
+                    <div class="cText">
+                    <h2>Call to action! It's time!</h2>
+                    <p>Enroll now with an incredibile discount lasting only till the end of the month!</p>
+                    </div>
+                    <div class="cBtn">
+                        <a>Sign up</a>
+                    </div>
+                </div>
             </div>
-            <footer>
-
-            </footer>
         </div>
+        <footer>
+            <p>Copyright &#169;	TrueChatolic 2022</p>
+        </footer>
    </div>
 </body>
 </html>

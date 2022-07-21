@@ -8,6 +8,10 @@
     /*outline: 2px solid red;*/
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 :root{
     /*COLORS:*/
     --backgroundCLR: #1F2937;
@@ -27,13 +31,13 @@
     height: 100vh;
     width: max(100%);
     overflow: hidden;
-    flex-direction: column !important;
+    flex-direction: column;
+    padding-left: 15rem;
+    padding-right: 15rem;
 }
 
 .one{
     background-color: var(--backgroundCLR);
-    padding-left: 15rem;
-    padding-right: 15rem;
 }
 
 header{
@@ -71,22 +75,37 @@ header li a{
     display: inherit;
     height: inherit;
     width: inherit;
-    justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+.heroCont{
+    display: inherit;
     flex-direction: column;
     gap: 40px;
-    
+}
+
+.heroCont p{
+    color: var(--secondaryTXT);
+    font-size: 1.5rem;
+}
+
+.heroImg{
+    display: inherit;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.heroImg img{
+    height: 400px;
+    width: 600px;
 }
 
 .hero h2{
     font-size: 48px;
     font-weight: bolder;
     color: var(--mainTXT)
-}
-
-.hero p{
-    font-size: 18px;
-    color: var(--secondaryTXT);
 }
 
 .hero button{
@@ -107,14 +126,17 @@ header li a{
     box-shadow: 1px 1px 1px darkblue;
 }
 
-.hero img{
-    color: white;
+.two{
+    align-items: center;
 }
 
-.two{
-    padding-left: 15rem;
-    padding-right: 15rem;
+.two h2{
+    display: flex;
+    width: max(100%);
+    height: 40%;
     align-items: center;
+    justify-content: center;
+    position: absolute;
 }
 
 .imgShowcase{
@@ -129,12 +151,17 @@ header li a{
 
 .three{
     background-color: var(--secondaryTXT);
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-align: justify;
 }
 
-.four{
-    padding-left: 15rem;
-    padding-right: 15rem;
-    align-items: center;
+.three strong{
+    display: inherit;
+    width: inherit;
+    justify-content: flex-end !important;
+    padding-top: 4rem;
 }
 
 .landingImage{
@@ -147,4 +174,65 @@ header li a{
     width: 200px;
     border: solid 2px var(--btnCLR);
     border-radius: 10%;
+}
+
+.four{
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+}
+
+.action{
+    background-color: #3882F6;
+    color: white;
+    height: 10rem;
+    width: 60rem;
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+    border: #3882F6 solid 2px;
+    border-radius: 2%;
+}
+
+.card{
+    display: inherit;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.cText{
+    padding-right: 60px;
+}
+
+.cBtn{
+    padding-left: 40px;
+}
+
+.cBtn a{
+    color: white;
+    padding: .8rem;
+    font-size: 1.2rem;
+    border: #F9FAF8 solid 2px;
+    border-radius: 10%;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.cBtn:active,
+.cBtn:hover{
+    cursor: pointer;
+}
+
+footer{
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+    background-color: #1F2937;
+    height: 4rem;
+    width: max(100%);
+    color: white;
+    font-size: 1.2rem;
 }
